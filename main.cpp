@@ -25,7 +25,7 @@ void Setup()
 void Draw()
 {
     system("cls"); //command to clear screen
-    for(int i = 0; i < width ; i++)
+    for(int i = 0; i < width + 2 ; i++)
         cout << "#";
     cout << endl;
 
@@ -43,6 +43,9 @@ void Draw()
         }
         cout << endl;
     }
+    for(int i = 0; i < width + 2 ; i++)
+        cout << "#";
+    cout << endl;
 
 }
 
