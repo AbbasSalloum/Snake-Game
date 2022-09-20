@@ -1,4 +1,6 @@
 #include <iostream>
+#include <conio.h>
+
 
 using namespace std;
 
@@ -57,11 +59,55 @@ void Draw()
 
 void Input()
 {
+    if(_kbhit())
+    {
+       switch(_getch())
+       {
+            case 'a':
+                dir = LEFT;
+                break;
+            case 'd':
+                dir = RIGHT;
+                break;
+            case 'w':
+                dir = UP;
+                break;
+            case 's':
+                dir = DOWN;
+                break;
+            case 'x':
+                gameOver = true;
+                break;
+
+
+       }
+
+    }
+
 
 }
 
 void Logic()
 {
+    switch (dir)
+    {
+    case LEFT:
+        x--;
+        break;
+    case RIGHT:
+        x++;
+        break;
+    case UP:
+        break;
+        y--;
+        
+    case DOWN:
+        break;
+        y++;
+        
+    default:
+        break;
+    }
 
 }
 
