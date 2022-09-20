@@ -98,12 +98,12 @@ void Logic()
         x++;
         break;
     case UP:
-        break;
         y--;
+        break;
         
     case DOWN:
-        break;
         y++;
+        break;
         
     default:
         break;
