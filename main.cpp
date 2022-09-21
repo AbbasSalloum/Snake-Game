@@ -116,8 +116,8 @@ void Logic()
     {
         prev2X = tailX[i];
         prev2Y = tailY[i];
-        tailX[i] = prev2X;
-        tailY[i] = prev2Y;
+        tailX[i] = prevX;
+        tailY[i] = prevY;
         prevX = prev2X;
         prevY = prev2Y;
     }
