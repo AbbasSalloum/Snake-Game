@@ -1,5 +1,6 @@
 #include <iostream>
 #include <conio.h>
+#include <windows.h>
 
 
 using namespace std;
@@ -143,6 +144,10 @@ void Logic()
     if(x > width || x < 0 || y > height || y < 0)
         gameOver = true;
 
+    for(int i = 0; i < nTail;i++)
+        if(tailX[i] == x && tailY[i] == y)
+            gameOver = true;
+
     if(x == fruitX && y == fruitY)
     {
 
@@ -169,6 +174,7 @@ int main()
         Draw();
         Input();
         Logic();
+        Sleep(10);
 
     }
 
